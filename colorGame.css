@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    background-color: #F3F5F8;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 12px;
+}
+.gameWrapper {
+    background-color: white;
+    max-width: 700px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+#container {
+    margin: 50px auto;
+    max-width: 600px; 
+    display: grid;
+    grid-column-gap: 12px;
+    grid-row-gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+h1 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.1;
+    font-weight: normal;
+    color: #9AA7B3;
+    margin: 0;
+    border-bottom: 1px dashed #CDDFF1;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#colorDisplay {
+    font-size: 28px;
+    display: block; 
+    margin-top: 20px;
+}
+
+#messageDisplay {
+    display: inline-block;
+    width: 20%;
+}
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0px -5px 24px rgba(185, 188, 197, 0.2);
+    color: #5776F6;
+
+}
+
+.selected {
+    color: white;
+    background-color: #5776F6;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 10px 12px;
+    height: 100%;
+    border-radius: 8px;
+    line-height: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    outline: none;
+    color: #5776F6;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: #5776F6;
+}
+
+@media only screen and (min-width: 600px) {
+    .gameWrapper {
+        margin: 50px auto;
+    }
+    #colorDisplay {
+        font-size: 42px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    #container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }

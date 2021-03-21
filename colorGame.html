@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="colorGame.css">
+    <title>Color Game</title>
+</head>
+<body>
+    <div class="gameWrapper">
+        <h1>
+            Guess the color
+            <span id="colorDisplay"></span> 
+        </h1>
+
+    
+        <div id="container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div id="stripe">
+            <button id="reset">New Colors</button>
+            <span id="messageDisplay"></span>
+            <div>
+                <button class="mode">Easy</button>
+                <button class="mode selected">Hard</button>
+            </div>
+         </div>
+    </div>
+
+    <script src="colorGame.js"></script>
+</body>
+</html>
